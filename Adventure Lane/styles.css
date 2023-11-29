@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    background-image: url('Background.png'); /* Replace with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    padding: 20px; /* Add padding to the container for better spacing */
+}
+
+img {
+    width: 150px; /* Set the width of your logo */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+    border-radius: 50%; /* Add a circular border to the logo */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the logo */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition for the transform property */
+}
+
+img:hover {
+    transform: rotate(360deg); /* Rotate the logo 360 degrees on hover */
+}
+
+h1 {
+    font-size: 2em; /* Increase the font size of the heading */
+    margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+p {
+    font-size: 1.2em; /* Increase the font size of the paragraph */
+    max-width: 600px; /* Set a maximum width for the paragraph */
+    margin-bottom: 30px; /* Adjust as needed for spacing */
+}
