@@ -1,18 +1,76 @@
+<!--TMCN-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Adventure Lane</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="background-container">
-        <img src="Logo.png" alt="Logo">
-        <h1>Welcome to Adventure Lane Travel Agents!
-        </h1>
-        <p>Your home to all your travel needs</p>
+    <!-- Navigation TMCN-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Adventure Lane</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="secondpage.html">Book a Destination</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Page with Bootstrap grid system TMCN-->
+-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Logo.png" alt="Adventure Lane Logo" class="img-fluid logo">
+            </div>
+            <div class="col-md-6">
+                <h1>Welcome to Adventure Lane</h1>
+            <p>
+                Our travel experts curate unforgettable destinations, ensuring each expedition is a seamless blend of excitement and relaxation. From picturesque landscapes to vibrant cultures, Adventure Lane is your gateway to a world of possibilities.
+            </p>
+            <p>
+                Let your wanderlust guide you as you explore our diverse range of destinations and handcrafted itineraries. Whether you seek the tranquility of serene beaches, the majesty of towering mountains, or the charm of bustling cities, we invite you to join us on a remarkable journey.
+            </p>
+            <p>
+                Start your adventure with Adventure Lane – where every step is a moment to cherish and every destination is a story waiting to be written.
+            </p>
+            <a href="secondpage.html" class="btn btn-primary btn-lg">Book Your Adventure</a>
+            </div>
+        </div>
+
+        <!-- Trivia Question Container TMCN-->
+
+        <div id="question-container"></div>
+        <!-- Feedback Container -->
+        <div id="feedback-container"></div>
     </div>
-    <script src="script.js"></script>
+<!--TMCN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="trivia.js"></script>
 </body>
+
 </html>

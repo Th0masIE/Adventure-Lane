@@ -1,15 +1,71 @@
-/* Fonts */
- /* font-family: 'Abril Fatface', serif; Titles */
- /* font-family: 'Montserrat', sans-serif; Text */
- /*font-family: 'Pacifico', cursive; Subtitles */
-
+/* Reset some default styles and set the font family TMCN */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.background-container {
-    background-image: url('Background.png'); 
+/* Navigation styling TMCN */
+.navbar {
+    background-color: #2c3e50; /* Dark background color */
+    padding: 15px; /* Add padding to the navbar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/*TMCN*/
+.navbar-brand {
+    font-weight: bold;
+    color: #fff; /* White text color for the brand */
+    font-size: 24px; /* Increase font size for the brand */
+    text-decoration: none; /* Remove underline */
+}
+
+/*TMCN*/
+.navbar-brand:hover {
+    color: #3498db; /* Change color on hover to a contrasting color */
+}
+
+/*TMCN*/
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggler icon */
+}
+
+/*TMCN*/
+.navbar-nav {
+    margin: 0 auto; /* Center the navbar items */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+/*TMCN*/
+.nav-item {
+    margin-right: 15px;
+}
+
+/*TMCN*/
+.nav-link {
+    color: #fff;
+    font-size: 16px; /* Adjust font size for the links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/*TMCN*/
+.nav-link:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+/* Background style class TMCN*/
+.background-image-container {
+    background-image: url('Background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,31 +74,89 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
+    justify-content: center;
     align-items: center;
-    padding: 20px; /* Add padding to the container for better spacing */
+    padding: 20px;
 }
 
-img {
-    width: 150px; /* Set the width of your logo */
-    height: auto; /* Maintain the aspect ratio */
-    margin-bottom: 20px; /* Adjust as needed for spacing */
-    border-radius: 50%; /* Add a circular border to the logo */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the logo */
-    transition: transform 0.3s ease-in-out; /* Add smooth transition for the transform property */
+/* Logo animation TMCN */
+.logo {
+    transition: transform 0.5s ease-in-out;
 }
 
-img:hover {
-    transform: rotate(360deg); /* Rotate the logo 360 degrees on hover */
+/*TMCN*/
+.logo:hover {
+    transform: rotate(360deg);
 }
 
-h1 {
-    font-size: 2em; /* Increase the font size of the heading */
-    margin-bottom: 10px; /* Adjust as needed for spacing */
+/* Modern card style for form container TMCN*/
+.form-container {
+    background-image: url(Background.png);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px; /* Adjust as needed */
+    text-align: center; /* Center form content */
 }
 
-p {
-    font-size: 1.2em; /* Increase the font size of the paragraph */
-    max-width: 600px; /* Set a maximum width for the paragraph */
-    margin-bottom: 30px; /* Adjust as needed for spacing */
+/* Grid styling TMCN*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*TMCN*/
+.grid-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style for grid item headings TMCN*/
+.grid-item h2 {
+    margin-bottom: 10px;
+}
+
+/* Style for grid item paragraphs TMCN*/
+.grid-item p {
+    margin: 0;
+}
+
+/* Add the following styles for the trivia game TMCN*/
+#question-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*TMCN*/
+.option {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*TMCN*/
+.option:hover {
+    background-color: #f5f5f5;
+}
+
+/*TMCN*/
+#feedback-container {
+    margin-top: 10px;
+    font-weight: bold;
 }
